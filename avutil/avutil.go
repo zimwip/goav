@@ -21,7 +21,7 @@ type (
 	Rational      C.struct_AVRational
 	MediaType     C.enum_AVMediaType
 	AvPictureType C.enum_AVPictureType
-	PixelFormat   C.enum_AVPixelFormat
+	AvPixelFormat C.enum_AVPixelFormat
 	File          C.FILE
 )
 
