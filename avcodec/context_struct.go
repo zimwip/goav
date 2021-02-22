@@ -55,7 +55,7 @@ func (ctxt *Context) Channels() int {
 	return int(ctxt.channels)
 }
 
-func (ctxt *Context) ChannelLayout() int {
+func (ctxt *Context) ChannelLayout() int64 {
 	return int(ctxt.channel_layout)
 }
 
