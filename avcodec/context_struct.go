@@ -55,6 +55,10 @@ func (ctxt *Context) Channels() int {
 	return int(ctxt.channels)
 }
 
+func (ctxt *Context) ChannelLayout() int {
+	return int(ctxt.channel_layout)
+}
+
 func (ctxt *Context) Chromaoffset() int {
 	return int(ctxt.chromaoffset)
 }
