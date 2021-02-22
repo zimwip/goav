@@ -56,7 +56,7 @@ func (ctxt *Context) Channels() int {
 }
 
 func (ctxt *Context) ChannelLayout() int64 {
-	return int(ctxt.channel_layout)
+	return int64(ctxt.channel_layout)
 }
 
 func (ctxt *Context) Chromaoffset() int {
