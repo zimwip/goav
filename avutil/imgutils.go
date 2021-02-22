@@ -17,7 +17,7 @@ const (
  * Return the name of sample_fmt, or NULL if sample_fmt is not
  * recognized.
  */
-func AvImageFillArrays(srcData [4]*uint8, dst_linesize [4]int, src *uint8, pix_fmt AvPixelFormat, width, height int, align int) int {
+func AvImageFillArrays(srcData [8]*uint8, dst_linesize [8]int32, src *uint8, pix_fmt AvPixelFormat, width, height int, align int) int {
 	cdata := (**C.uint8_t)(unsafe.Pointer(&srcData[0]))
 	cdst_linesize := (*C.int)(unsafe.Pointer(&dst_linesize[0]))
 	csrc := (*C.uint8_t)(unsafe.Pointer(src))
